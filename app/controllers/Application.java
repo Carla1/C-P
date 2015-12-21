@@ -36,6 +36,12 @@ public class Application extends Controller {
 		return ok(views.html.index.render(result,contador));
 	}
 
+	@Transactional
+	public static Result login() {
+		// Todos os Livros do Banco de Dados
+			return ok(views.html.loginnoivos.render());
+	}
+
 
 
 	@Transactional
@@ -60,8 +66,7 @@ public class Application extends Controller {
             //TODO falta colocar na interface mensagem de erro.
 			return badRequest(views.html.index.render(result, contador));
 		} else {
-            Anuncio novoAnuncio = new Anuncio(filledForm.get("nome"), filledForm.get("cidade"),filledForm.get("bairro"),filledForm.get("instrumentos"),
-					filledForm.get("email"),filledForm.get("face"),objetivo, filledForm.get("estilo_gosta"),filledForm.get("estilo_nao_gosta"),filledForm.get("codigo"));
+            Anuncio novoAnuncio = new Anuncio(filledForm.get("link"), filledForm.get("nome"));
             Logger.debug("Criando anúncio: " + filledForm.data().toString() + " como " + novoAnuncio.getNome());
 			// Persiste o Anuncio criado
 			dao.persist(novoAnuncio);
@@ -74,7 +79,7 @@ public class Application extends Controller {
              * arquivo routes, continua funcionando.
              */
 
-			return redirect(routes.Application.anuncios());
+			return redirect(routes.Application.criar());
 		}
 	}
 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Carla & Paulo</title>
+    <meta charset="UTF-8">
+    <meta name=description content="">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <!-- Navbar -->
+    <ul class="nav nav-tabs">
+        <li>
+            <a href="@routes.Application.index()">Lista de Presentes</a>
+        </li>
+        <li class="active">
+            <a>Login dos noivos</a>
+        </li>
+    </ul>
+
+    <div class="jumbotron">
+        <h1>Carla & Paulo</h1>
+
+    </div>
+</div>
+<div class="content">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-10">
+     <p><label for="senha"> Senha:
+        <input id="senha" type="password"/></label></p>
+    <div id="entrar">
+        <a href="@routes.Application.criar()"><input type="submit" value="Entrar" onclick="senha()"></a>
+    </div>
+        <script>
+                        function senha(){
+                            var str1 = $("#inputSenha").val();
+                            var str2 = "carlaepaulos2";
+                            var n = str1.localeCompare(str2);
+                            if( n != 0)
+                                alert("Digite seu código corretamente!");
+                        }
+                    </script>
+    </div>
+
+</div>
+
+</body>
+</html>

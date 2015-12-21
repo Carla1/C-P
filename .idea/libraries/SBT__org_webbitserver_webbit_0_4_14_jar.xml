@@ -2,6 +2,7 @@
   <library name="SBT: org.webbitserver:webbit:0.4.14:jar">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/../../UFCG/4ºPeriodo/SI1/activator-1.3.2/repository/org.webbitserver/webbit/0.4.14/jars/webbit.jar!/" />
+      <root url="jar://$USER_HOME$/Documentos/UFCG/4ºPeriodo/SI1/activator-1.3.2/repository/org.webbitserver/webbit/0.4.14/jars/webbit.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

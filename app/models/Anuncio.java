@@ -22,7 +22,7 @@ public class Anuncio {
 	private List<Anunciante> autores;
 
 	@Column
-	private String nome, cidade, bairro, instrumentos, email, face, objetivo, estilo_gosta, estilo_nao_gosta, codigo;
+	private String link, nome, codigo;
 
 	@Column
 	private String[] lista_instrumentos, lista_estilos;
@@ -34,39 +34,18 @@ public class Anuncio {
 		this.autores = new ArrayList<Anunciante>();
 	}
 
-	public Anuncio(String nome, String cidade, String bairro, String instrumentos, String email, String face, String objetivo,
-				   String estilo_gosta, String estilo_nao_gosta, String codigo) {
-       	this();
-    	this.nome = nome;
-		this.cidade = cidade;
-		this.bairro = bairro;
-		this.instrumentos = instrumentos;
-		this.email = email;
-		this.face = face;
-		this.objetivo = objetivo;
-		this.estilo_gosta = estilo_gosta;
-		this.estilo_nao_gosta = estilo_nao_gosta;
-		this.codigo = codigo;
-
-
-   	}
-
-	public String [] criaListaInstrumentos(){
-		lista_instrumentos = instrumentos.split(",");
-		return lista_instrumentos;
+	public Anuncio(String link, String nome){
+		this.nome = nome;
+		this.link = link;
+		this.codigo = "removerdalista";
 	}
 
-	public String [] criaListaEstilos(){
-		lista_estilos = estilo_gosta.split(",");
-		return lista_estilos;
+	public String getLink() {
+		return link;
 	}
 
-	public String[] getLista_estilos() {
-		return lista_estilos;
-	}
-
-	public String[] getLista_instrumentos() {
-		return lista_instrumentos;
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	public String getCodigo() {
@@ -76,75 +55,6 @@ public class Anuncio {
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
-
-	public String getEstilo_nao_gosta() {
-		return estilo_nao_gosta;
-	}
-
-	public void setEstilo_nao_gosta(String estilo_nao_gosta) {
-		this.estilo_nao_gosta = estilo_nao_gosta;
-	}
-
-	public String getEstilo_gosta() {
-		return estilo_gosta;
-	}
-
-	public void setEstilo_gosta(String estilo_gosta) {
-		this.estilo_gosta = estilo_gosta;
-	}
-
-	public String getInstrumentos() { return instrumentos; }
-
-	public void setInstrumentos(String instrumentos) { 	this.instrumentos = instrumentos; }
-
-	//	public ArrayList<String> getInstrumentos() {
-//		return instrumentos;
-//	}
-//
-//	public void setInstrumentos(ArrayList<String> instrumentos) {
-//		this.instrumentos = instrumentos;
-//	}
-
-	public String getCidade() {
-		return cidade;
-	}
-
-	public void setCidade(String cidade) {
-        	this.cidade = cidade;
-    	}
-	
-	public String getBairro() {
-		return bairro;
-	}
-
-    	public void setBairro(String bairro) {
-        this.bairro = bairro;
-   	}
-	
-	public String getEmail() {
-		return email;
-	}
-
-   	public void setEmail(String email) {
-        this.email = email;
-   	}
-
-	public String getFace() {
-		return face;
-	}
-
-    	public void setFace(String face) {
-        this.face = face;
-   	 }
-
-	public String getObjetivo() {
-		return objetivo;
-	}
-
-    	public void setObjetivo(String objetivo) {
-        this.objetivo = objetivo;
-    	}
-
 
     public String getNome() {
 		return nome;
