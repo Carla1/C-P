@@ -1,0 +1,1231 @@
+2015-06-03 11:57:32,777 - [INFO] - from play in pool-4-thread-3 
+Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2015-06-03 12:11:12,750 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:11:13,049 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:11:15,696 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:12:19,871 - [DEBUG] - from application in play-akka.actor.default-dispatcher-9 
+Criando anúncio: {codigo=1234, face=carlamorgana1@gmail.com, cidade=Campina, bairro=Universitário, email=carlamorgana1@gmail.com, estilo_nao_gosta=d, objetivo=Tocar Ocasionalmente, instrumentos=violão, piano, nome=Carla, estilo_gosta=ss} como Carla
+
+2015-06-03 12:13:38,495 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:13:38,498 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:13:38,654 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:13:59,144 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-06-03 12:13:59,162 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6mbnnl4f6 - Internal server error, for (GET) [/pesquisarAnuncio] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Application.pesquisarAnuncio(Application.java:126) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-06-03 12:21:09,929 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:21:09,932 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:21:10,123 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:21:42,302 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:21:42,304 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:21:42,448 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:21:42,459 - [ERROR] - from play in play-internal-execution-context-1 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-06-03 12:21:42,464 - [ERROR] - from application in play-internal-execution-context-1 
+
+
+! @6mbnoldoj - Internal server error, for (GET) [/pesquisarAnuncio] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Application.pesquisarAnuncio(Application.java:126) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[na:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[na:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-06-03 12:29:43,495 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:29:43,497 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:29:43,626 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:34:23,533 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:34:23,535 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:34:23,649 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:35:29,076 - [INFO] - from play in play-internal-execution-context-1 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:35:29,079 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:35:29,246 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-06-03 12:46:36,233 - [INFO] - from play in play-internal-execution-context-3 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:46:36,235 - [INFO] - from play in play-internal-execution-context-3 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:46:36,379 - [INFO] - from play in play-internal-execution-context-3 
+Application started (Dev)
+
+2015-06-03 12:48:10,529 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:48:10,531 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:48:10,636 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:49:38,538 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:49:38,541 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:49:38,673 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:50:57,495 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:50:57,497 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:50:57,587 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:52:15,055 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:52:15,057 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:52:15,150 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:53:35,698 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:53:35,700 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:53:35,820 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:53:56,475 - [DEBUG] - from application in play-akka.actor.default-dispatcher-34 
+Criando anúncio: {codigo=1234, face=carlamorgana1@gmail.com, cidade=Campina, bairro=Universitário, email=carlamorgana1@gmail.com, estilo_nao_gosta=d, objetivo=Tocar Ocasionalmente, instrumentos=violão, piano, nome=Carla, estilo_gosta=ss} como Carla
+
+2015-06-03 12:56:52,973 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:56:52,975 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:56:53,081 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 12:58:45,353 - [ERROR] - from application in New I/O worker #6 
+
+
+! @6mbo3i048 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
+	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
+	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
+	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library-2.10.3.jar:na]
+	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library-2.10.3.jar:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_55]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) ~[na:1.7.0_55]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_55]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_55]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_55]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_55]
+
+2015-06-03 12:59:02,220 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 12:59:02,222 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 12:59:02,318 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 13:02:18,015 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:02:18,017 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:02:18,116 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 13:04:25,927 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:04:25,930 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:04:26,024 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 13:09:35,723 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:09:35,725 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:09:35,814 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 13:13:03,343 - [INFO] - from play in play-internal-execution-context-4 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:13:03,345 - [INFO] - from play in play-internal-execution-context-4 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:13:03,428 - [INFO] - from play in play-internal-execution-context-4 
+Application started (Dev)
+
+2015-06-03 13:16:42,242 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:16:42,244 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:16:42,332 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:18:51,149 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:18:51,152 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:18:51,236 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:19:20,076 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:19:20,078 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:19:20,156 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:19:44,984 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:19:44,986 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:19:45,064 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:20:40,917 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:20:40,919 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:20:40,998 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:21:47,542 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:21:47,544 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:21:47,625 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:23:57,421 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:23:57,422 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:23:57,499 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:25:09,359 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:25:09,361 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:25:09,442 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:26:33,811 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:26:33,813 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:26:33,912 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:27:25,622 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:27:25,624 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:27:25,745 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:28:09,647 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:28:09,649 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:28:09,728 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:29:04,973 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:29:04,975 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:29:05,053 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:29:51,321 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:29:51,323 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:29:51,397 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:30:11,768 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:30:11,770 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:30:11,845 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:30:50,505 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:30:50,507 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:30:50,589 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:32:07,727 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:32:07,729 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:32:07,803 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:33:33,662 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:33:33,665 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:33:33,738 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:36:55,982 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:36:55,985 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:36:56,074 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:38:19,076 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:38:19,078 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:38:19,167 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:38:42,965 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:38:42,967 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:38:43,041 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:39:37,557 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:39:37,558 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:39:37,635 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:41:58,056 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:41:58,057 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:41:58,154 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:43:02,184 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:43:02,187 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:43:02,272 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:43:34,439 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:43:34,441 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:43:34,512 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:53:15,124 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:53:15,126 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:53:15,203 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 13:53:31,416 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-06-03 13:53:31,421 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mboamp7i - Internal server error, for (POST) [/pesquisarAnuncio] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at models.dao.GenericDAO.findByAttributeInstumento(GenericDAO.java:89) ~[classes/:na]
+	at controllers.Application.pesquisarAnuncio(Application.java:129) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.apply(routes_routing.scala:133) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$7$$anonfun$apply$7.apply(routes_routing.scala:133) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-06-03 13:55:58,259 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 13:55:58,261 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 13:55:58,351 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:04:25,980 - [ERROR] - from application in New I/O worker #5 
+
+
+! @6mboc85e9 - Internal server error, for (GET) [/] ->
+
+play.PlayExceptions$TemplateCompilationException: Compilation error[Unmatched bracket]
+	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:55) ~[na:na]
+	at play.PlaySourceGenerators$$anonfun$3.apply(PlaySourceGenerators.scala:30) ~[na:na]
+	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:35) ~[scala-library-2.10.3.jar:na]
+	at scala.Function5$$anonfun$tupled$1.apply(Function5.scala:34) ~[scala-library-2.10.3.jar:na]
+	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47) ~[scala-library-2.10.3.jar:na]
+	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:42) ~[na:na]
+	at sbt.std.Transform$$anon$4.work(System.scala:64) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:18) ~[na:na]
+	at sbt.Execute.work(Execute.scala:244) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:237) ~[na:na]
+	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:160) ~[na:na]
+	at sbt.CompletionService$$anon$2.call(CompletionService.scala:30) ~[na:na]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_55]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471) ~[na:1.7.0_55]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262) ~[na:1.7.0_55]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [na:1.7.0_55]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [na:1.7.0_55]
+	at java.lang.Thread.run(Thread.java:745) [na:1.7.0_55]
+
+2015-06-03 14:04:42,225 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:04:42,227 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:04:42,313 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:04:42,439 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-akka.actor.default-dispatcher-84 
+Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+
+2015-06-03 14:04:42,454 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+
+2015-06-03 14:04:42,464 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mboc93oo - Internal server error, for (GET) [/anuncios] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:275) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at models.dao.GenericDAO.findAllByClass(GenericDAO.java:55) ~[classes/:na]
+	at controllers.Application.anuncios(Application.java:39) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2529) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2512) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2337) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:356) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:195) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1269) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:266) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	... 25 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:169) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:146) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.util.StringUtils.convertHexToBytes(StringUtils.java:941) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.convertTo(Value.java:823) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.getBytes(Value.java:392) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.jdbc.JdbcResultSet.getBytes(JdbcResultSet.java:1042) ~[h2-1.3.172.jar:1.3.172]
+	at org.hibernate.type.descriptor.sql.VarbinaryTypeDescriptor$2.doExtract(VarbinaryTypeDescriptor.java:66) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:261) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:247) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:332) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2912) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1673) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1605) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1505) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:713) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2526) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	... 34 common frames omitted
+
+2015-06-03 14:04:43,743 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-akka.actor.default-dispatcher-77 
+Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+
+2015-06-03 14:04:43,745 - [ERROR] - from play in play-internal-execution-context-6 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+
+2015-06-03 14:04:43,754 - [ERROR] - from application in play-internal-execution-context-6 
+
+
+! @6mboc95me - Internal server error, for (GET) [/anuncios] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:275) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at models.dao.GenericDAO.findAllByClass(GenericDAO.java:55) ~[classes/:na]
+	at controllers.Application.anuncios(Application.java:39) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2529) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2512) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2337) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:356) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:195) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1269) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:266) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	... 25 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:169) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:146) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.util.StringUtils.convertHexToBytes(StringUtils.java:941) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.convertTo(Value.java:823) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.getBytes(Value.java:392) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.jdbc.JdbcResultSet.getBytes(JdbcResultSet.java:1042) ~[h2-1.3.172.jar:1.3.172]
+	at org.hibernate.type.descriptor.sql.VarbinaryTypeDescriptor$2.doExtract(VarbinaryTypeDescriptor.java:66) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:261) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:247) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:332) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2912) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1673) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1605) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1505) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:713) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2526) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	... 34 common frames omitted
+
+2015-06-03 14:06:06,427 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:06:06,430 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:06:06,516 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:06:06,527 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-akka.actor.default-dispatcher-84 
+Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+
+2015-06-03 14:06:06,528 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+
+2015-06-03 14:06:06,534 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mbocdo8b - Internal server error, for (GET) [/anuncios] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:275) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at models.dao.GenericDAO.findAllByClass(GenericDAO.java:55) ~[classes/:na]
+	at controllers.Application.anuncios(Application.java:39) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2529) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2512) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2337) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:356) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:195) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1269) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:266) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	... 25 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:169) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:146) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.util.StringUtils.convertHexToBytes(StringUtils.java:941) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.convertTo(Value.java:823) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.getBytes(Value.java:392) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.jdbc.JdbcResultSet.getBytes(JdbcResultSet.java:1042) ~[h2-1.3.172.jar:1.3.172]
+	at org.hibernate.type.descriptor.sql.VarbinaryTypeDescriptor$2.doExtract(VarbinaryTypeDescriptor.java:66) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:261) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:247) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:332) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2912) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1673) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1605) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1505) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:713) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2526) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	... 34 common frames omitted
+
+2015-06-03 14:09:01,640 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:09:01,642 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:09:01,723 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:09:01,745 - [ERROR] - from org.hibernate.engine.jdbc.spi.SqlExceptionHelper in play-akka.actor.default-dispatcher-85 
+Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+
+2015-06-03 14:09:01,746 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+
+2015-06-03 14:09:01,757 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mbocnndh - Internal server error, for (GET) [/anuncios] ->
+
+play.api.Application$$anon$1: Execution exception[[PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1387) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1310) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:275) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	at models.dao.GenericDAO.findAllByClass(GenericDAO.java:55) ~[classes/:na]
+	at controllers.Application.anuncios(Application.java:39) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$3$$anonfun$apply$3.apply(routes_routing.scala:101) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute query
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:125) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2529) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2512) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.list(Loader.java:2337) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:495) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:356) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:195) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1269) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:101) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:266) ~[hibernate-entitymanager-4.2.3.Final.jar:4.2.3.Final]
+	... 25 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLException: Hexadecimal string with odd number of characters: "violão, piano" [90003-172]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:329) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:169) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.message.DbException.get(DbException.java:146) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.util.StringUtils.convertHexToBytes(StringUtils.java:941) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.convertTo(Value.java:823) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.value.Value.getBytes(Value.java:392) ~[h2-1.3.172.jar:1.3.172]
+	at org.h2.jdbc.JdbcResultSet.getBytes(JdbcResultSet.java:1042) ~[h2-1.3.172.jar:1.3.172]
+	at org.hibernate.type.descriptor.sql.VarbinaryTypeDescriptor$2.doExtract(VarbinaryTypeDescriptor.java:66) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.descriptor.sql.BasicExtractor.extract(BasicExtractor.java:64) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:261) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:257) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.nullSafeGet(AbstractStandardBasicType.java:247) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.type.AbstractStandardBasicType.hydrate(AbstractStandardBasicType.java:332) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.hydrate(AbstractEntityPersister.java:2912) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.loadFromResultSet(Loader.java:1673) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.instanceNotYetLoaded(Loader.java:1605) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRow(Loader.java:1505) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.getRowFromResultSet(Loader.java:713) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.processResultSet(Loader.java:943) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:911) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:342) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	at org.hibernate.loader.Loader.doList(Loader.java:2526) ~[hibernate-core-4.2.3.Final.jar:4.2.3.Final]
+	... 34 common frames omitted
+
+2015-06-03 14:12:03,125 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:12:03,128 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:12:03,216 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:14:11,729 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:14:11,731 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:14:11,801 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:24:14,023 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:24:14,026 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:24:14,118 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+
+2015-06-03 14:24:52,282 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-06-03 14:24:52,288 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mboeppgi - Internal server error, for (GET) [/pesquisarAnuncio] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at controllers.Application.pesquisarAnuncio(Application.java:127) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$6$$anonfun$apply$6.apply(routes_routing.scala:125) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-06-03 14:25:00,378 - [ERROR] - from play in play-internal-execution-context-5 
+Cannot invoke the action, eventually got an error: java.lang.NullPointerException
+
+2015-06-03 14:25:00,392 - [ERROR] - from application in play-internal-execution-context-5 
+
+
+! @6mbof0bg9 - Internal server error, for (GET) [/pesquisa] ->
+
+play.api.Application$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.Application$class.handleError(Application.scala:293) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.api.DefaultApplication.handleError(Application.scala:399) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3$$anonfun$applyOrElse$3.apply(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.Option.map(Option.scala:145) [scala-library-2.10.3.jar:na]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:264) [play_2.10-2.2.3.jar:2.2.3]
+	at play.core.server.netty.PlayDefaultUpstreamHandler$$anonfun$3.applyOrElse(PlayDefaultUpstreamHandler.scala:260) [play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:344) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:343) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.api.libs.iteratee.Execution$$anon$1.execute(Execution.scala:43) [play-iteratees_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:40) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:248) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Promise$class.complete(Promise.scala:55) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.Promise$DefaultPromise.complete(Promise.scala:153) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$map$1.apply(Future.scala:235) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask$AdaptedRunnableAction.exec(ForkJoinTask.java:1361) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) [scala-library-2.10.3.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) [scala-library-2.10.3.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at scala.collection.mutable.ArrayOps$ofRef$.length$extension(ArrayOps.scala:114) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.mutable.ArrayOps$ofRef.length(ArrayOps.scala:114) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.SeqLike$class.size(SeqLike.scala:106) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.mutable.ArrayOps$ofRef.size(ArrayOps.scala:108) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.mutable.Builder$class.sizeHint(Builder.scala:69) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.mutable.ArrayBuilder.sizeHint(ArrayBuilder.scala:24) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.builder$1(TraversableLike.scala:240) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:243) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.mutable.ArrayOps$ofRef.map(ArrayOps.scala:108) ~[scala-library-2.10.3.jar:na]
+	at views.html.pesquisar$$anonfun$apply$1.apply(pesquisar.template.scala:77) ~[classes/:na]
+	at views.html.pesquisar$$anonfun$apply$1.apply(pesquisar.template.scala:76) ~[classes/:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.Iterator$class.foreach(Iterator.scala:727) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.IterableLike$class.foreach(IterableLike.scala:72) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:54) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244) ~[scala-library-2.10.3.jar:na]
+	at scala.collection.AbstractTraversable.map(Traversable.scala:105) ~[scala-library-2.10.3.jar:na]
+	at views.html.pesquisar$.apply(pesquisar.template.scala:76) ~[classes/:na]
+	at views.html.pesquisar$.render(pesquisar.template.scala:151) ~[classes/:na]
+	at views.html.pesquisar.render(pesquisar.template.scala) ~[classes/:na]
+	at controllers.Application.pesquisa(Application.java:118) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:117) ~[classes/:na]
+	at Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(routes_routing.scala:117) ~[classes/:na]
+	at play.core.Router$HandlerInvoker$$anon$7$$anon$2.invocation(Router.scala:183) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.Router$Routes$$anon$1.invocation(Router.scala:377) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:56) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:20) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction$1.apply(TransactionalAction.java:18) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.JPA.withTransactionAsync(JPA.java:177) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.db.jpa.TransactionalAction.call(TransactionalAction.java:15) ~[play-java-jpa_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:91) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.JavaAction$$anon$3.apply(JavaAction.scala:90) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at play.core.j.FPromiseHelper$$anonfun$flatMap$1.apply(FPromiseHelper.scala:82) ~[play_2.10-2.2.3.jar:2.2.3]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:249) ~[scala-library-2.10.3.jar:na]
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:32) [scala-library-2.10.3.jar:na]
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:37) ~[play_2.10-2.2.3.jar:2.2.3]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:42) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:386) ~[akka-actor_2.10-2.2.0.jar:2.2.0]
+	... 4 common frames omitted
+
+2015-06-03 14:25:46,344 - [INFO] - from play in play-internal-execution-context-5 
+datasource [jdbc:h2:mem:play] bound to JNDI as DefaultDS
+
+2015-06-03 14:25:46,346 - [INFO] - from play in play-internal-execution-context-5 
+database [default] connected at jdbc:h2:mem:play
+
+2015-06-03 14:25:46,422 - [INFO] - from play in play-internal-execution-context-5 
+Application started (Dev)
+

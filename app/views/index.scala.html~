@@ -1,0 +1,105 @@
+@(livros: List[Livro])
+
+<html lang="">
+    <head>
+        <title>Hibernate Example</title>
+        <meta charset="UTF-8">
+        <meta name=description content="">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+    <div class="content">
+    	<div class="col-sm-5">
+        <h2 class="text-center">@livros.size() livro(s)</h2>
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Título </th>
+                            <th>Cidade </th>
+                            <th>Bairro </th>
+			    <th>Email </th>
+			    <th>Facebook </th>
+			    <th>Objetivo </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    @for(livro <- livros) {
+                        <tr>
+                            <td>@livro.getNome()</td>
+			    <td>@livro.getCidade()</td>
+			    <td>@livro.getBairro()</td>
+			    <td>@livro.getEmail()</td>
+			    <td>@livro.getFace()</td>
+			    <td>@livro.getObj()</td>
+                  <!--      <td> 
+                                @for(autor <- livro.getAutores()) {
+                                    <p> @autor.getNome()</p>
+                                }
+                            </td> -->
+                            <td>
+                            <form action="@routes.Application.deleteBook(livro.getId())" method="post"> 
+                                <input type="submit" class="btn btn-danger" value="Delete">
+                            </form>
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+		<div class="col-sm-4">
+        <h2>Criar Anúncio</h2>
+
+        <form action="@routes.Application.newBook()" method="post"> 
+            <label for="nome"> Nome: </label>
+            <input type="text" name="nome" id="inputNome" class="form-control"required="required">
+	    <label for="cidade"> Cidade: </label>
+            <input type="text" name="cidade" id="inputCidade" class="form-control"required="required">
+	    <label for="bairro"> Bairro: </label>
+            <input type="text" name="bairro" id="inputBairro" class="form-control"required="required">
+	    <label for="Email"> Email: </label>
+            <input type="email" name="email" id="inputEmail" class="form-control"required="required">
+	    <label for="face"> Facebook: </label>
+            <input type="email" name="face" id="inputFace" class="form-control"required="required">
+	    <label for="obj"> Objetivo: </label>
+            <input type="text" name="obj" id="inputObj" class="form-control"required="required">
+            <input type="submit" class="btn btn-primary" value="Create">
+        </form>
+
+        <h2>Adiciona um autor ao livro</h2>
+
+        <!-- vai receber o livro e o nome do autor -->
+        <form action="/books/addAutor" method="get"> 
+            <select name="livro" id="inputLivro" class="form-control">
+                <option value="" disabled>-- Select One --</option>
+                @for(livro <- livros) {
+                    <option value="@livro.getId()"> @livro.getNome()</option>
+                }
+            </select>
+            <label for="nome"> Autor: </label>
+            <input type="text" name="autor" id="inputAutor" class="form-control"required="required">
+            <input type="submit" class="btn btn-primary" value="ok">
+        </form>
+
+        </div>
+    </div>
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+
+
+<ul>
+    
+</ul>
+
+    

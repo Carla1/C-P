@@ -1,0 +1,96 @@
+@(anuncios: List[Anuncio])(contador: Contador)
+
+<html lang="">
+    <head>
+        <title>Help Musics</title>
+        <meta charset="UTF-8">
+        <meta name=description content="">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    </head>
+    <body>
+    <div class="container">
+        <!-- Navbar -->
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="@routes.Application.index()">Home</a>
+            </li>
+            <li><a href="@routes.Application.criar()" method="post">Criar Anúncio </a></li>
+            <li><a href="@routes.Application.pesquisa()" method="post">Pesquisar</a></li>
+        </ul>
+
+        <div class="jumbotron">
+            <h1>Bem vindos ao Help Music</h1>
+
+        </div>
+    </div>
+    <div class="content">
+        <div class="col-sm-1"></div>
+    	<div class="col-sm-10">
+
+        <h2 class="text-center">@anuncios.size() anuncio(s)</h2>
+        <h5 class="text-center">@contador.getResolvido() anuncio(s) resolvidos</h5>
+
+                    @for(anuncio <- anuncios) {
+                    <details>
+                        <summary>Título: @anuncio.getNome()</summary>
+                        <p>Objetivo: @anuncio.getObjetivo()</p>
+                        <p>Cidade: @anuncio.getCidade() </p>
+                        <p>Email: @anuncio.getEmail()</p>
+                        <p>Facebook: @anuncio.getFace()</p>
+                        <p>Instrumentos: </p>
+                        @for(i <- anuncio.getInstrumentos()){
+                        <p> -> @i</p>}
+                        <p>Estilos que gosta: @anuncio.getEstilo_gosta</p>
+                        <p>Estilos que não gosta: @anuncio.getEstilo_nao_gosta</p>
+                        <p> <form action="@routes.Application.deleteAnuncio(anuncio.getId())" method="post" role="form">
+                            <label>
+                            <input type="password" name="codigo" id="codigo" class="form-control" required="required">Código</label>
+                            <div class="radio">
+                                <label><input value="1" name="optradio" type="radio" required="required">Resolvido</label>
+                            </div>
+                            <div class="radio">
+                                <label><input value="0" name="optradio" type="radio">Não resolvido</label>
+                            </div>
+
+                            <input type="submit" id="d" class="btn btn-danger" value="Delete" onclick="myFunction()">
+
+                    </form></p>
+
+
+
+                    <script>
+                        function myFunction(){
+                            var str1 = $("#inputCodigo").val();
+                            var str2 = @anuncio.getCodigo();
+                            var n = str1.localeCompare(str2);
+                            if( n != 0)
+                                alert("Digite seu código corretamente!");
+                        }
+                    </script>
+
+
+                    }
+                        </details>
+        </div>
+    </div>
+    <div class="content">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-7">
+            <form action="@routes.Application.criar()" method="post">
+            <input type="submit" class="btn btn-success btn-mini" value="Criar Anúncio"></form>
+        </div>
+    </div>
+
+
+        <!-- jQuery -->
+        <script src="http://code.jquery.com/jquery.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
+    
